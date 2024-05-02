@@ -20,9 +20,24 @@ header{
     padding: 10px 0;
     text-align: center;
 }
+
+header div ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 100%;
+}
+
 header ul li a{
     color: #174966;
     text-decoration: none;
+}
+
+header ul li{
+    border-bottom: 2px solid transparent;
+}
+header ul li:hover{
+    border-bottom: 2px solid #174966;
 }
 header div .col-5 {
     display: flex;
@@ -42,6 +57,13 @@ header div .col-5 .col{
     justify-content: space-around;
 }
 
+#btnMenu{
+    cursor: pointer;
+}
+
+#btnMenu:hover{
+    filter: drop-shadow(0px 0px 3px #174966b6);
+}
 header div .col-5 i{
     font-size: 18px;
 }
@@ -59,17 +81,12 @@ header div img {
 #btn-exit:hover{
     color: #f00;
 }
-header div ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    gap: 100%;
-}
 
 header button {
     border: 1px solid #174966;
     border-radius: 14px;
     background: #FFF;
+    transition: all 400ms;
 }
 
 header button a{
@@ -77,6 +94,13 @@ header button a{
     color: #174966;
 }
 
+header button:hover{
+    background-color: #174966dd;
+}
+
+header button:hover a{
+    color: #FFF;
+}
 header hr{
     width: 70%;
     margin: 10px auto;

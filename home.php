@@ -9,7 +9,7 @@
     <title>SIPH</title>
 </head>
 <body>
-    <?php $pwActual = "index";
+    <?php $pwActual = "home";
     include("vistas/vwHeader.php");?>
     <main>
     <?php

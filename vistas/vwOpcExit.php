@@ -1,0 +1,1 @@
+<a href="#"><i class="bi bi-box-arrow-left" id="btn-exit" title="Salir"></i></a>
