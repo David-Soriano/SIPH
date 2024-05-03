@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <title>SIPH</title>
 </head>
 
-<body id="body">
+<body>
     <?php $pwActual = "home";
+    include ("controllers/funciones.php");
     include ("vistas/vwHeader.php"); ?>
     <main>
         <div class="container">

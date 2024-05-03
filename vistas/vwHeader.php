@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="col-2">
-            <a href="<?php if($pwActual == 'home'){?>home.php<?php } else{?>index.php<?php } ?>"><img src="img/logo.png" alt="Logo"></a>
+            <a href="<?php direccionEnlace($pwActual, "home.php", "index.php")?>"><img src="img/logo.png" alt="Logo"></a>
         </div>
         <div class="col-5">
             <div class="col bx-menurg">

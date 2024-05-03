@@ -1,1 +1,1 @@
-<li><a href="home.php?vw=01">AYUDA</a></li>
+<li><a href="<?php direccionEnlace($pwActual, "home.php?vw=01", "index.php?vw=01")?>">AYUDA</a></li>
