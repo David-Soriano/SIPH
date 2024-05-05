@@ -113,6 +113,32 @@ header hr {
     margin: 10px auto;
 }
 
+.bx-wel .bx-wel_img{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+.bx-wel .bx-wel_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bx-wel .bx-wel_text-2{
+    text-align: end;
+}
+.bx-wel_end{
+    display: flex;
+    justify-content: center;
+}
+
+.bx-wel_end div{
+    text-align: center;
+}
+.bx-wel div img{
+    width: 50%;
+}
 #img-init {
     width: 20%;
     margin: 4% 0;
@@ -149,6 +175,10 @@ header hr {
     justify-content: center;
 }
 
+.c-2{
+    outline: none;
+}
+
 .bx-soport .bx-soport_text {
     display: flex;
     flex-direction: column;
@@ -157,23 +187,26 @@ header hr {
 }
 
 .bx-soport .bx-soport_text {
-    background-image: radial-gradient(ellipse farthest-corner at 64px 147px, #fff 50%, rgba(0, 255, 0, 0) 0%, #32627A 50%);
+    background-image: radial-gradient(ellipse farthest-corner at -290px 150px, #fff 50%, rgba(0, 255, 0, 0) 0%, #32627A 50%);;
     border-radius: 10px;
 }
 
 .bx-soport .bx-soport_form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .bx-soport .bx-soport_form div {
-    outline: 1px solid gray;
     padding: 5%;
     border-radius: 10px;
-    background: #e8e8e8;
 }
 
+.bx-soport .bx-text-spt{
+    position: relative;
+    top: 120px;
+    left: 160px;
+}
 .bx-soport .bx-soport_form form {
     display: flex;
     flex-direction: column;
@@ -187,7 +220,8 @@ textarea {
 .bx-soport .bx-soport_form form textarea {
     border-radius: 5px;
     border: none;
-    background: #ffffff;
+    background: #ffffff0D;
+    color: #fff;
     padding: 1% 4%;
 }
 
@@ -199,11 +233,21 @@ textarea {
     padding: 6%;
 }
 
+.bx-soport .bx-soport_form form label{
+    color: #ffffff;
+    margin-top: 5%;
+}
 .bx-soport .bx-soport_form form input {
     border: none;
-    border-radius: 10px;
-    background: #ffffff;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    background: transparent;
     padding: 1% 4%;
+}
+
+.bx-soport .bx-soport_form form input::placeholder,
+.bx-soport .bx-soport_form form textarea::placeholder{
+    color: #ffffff9f;
 }
 
 .bx-soport .bx-soport_form form input:focus {
@@ -211,9 +255,11 @@ textarea {
 }
 
 .bx-soport .bx-soport_form form input[type="submit"] {
-    background: #cb9673;
-    color: #FFF;
+    background: #dd9e63;
+    color: #174966;
     margin-top: 4%;
+    border-radius: 10px;
+    border: none;
 }
 
 .bx-notf {
