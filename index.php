@@ -26,6 +26,8 @@
                 include ("vistas/vwSoport.php");
             } else if ($vw == "02") {
                 include ("vistas/vwReservas.php");
+            } else if ($vw == "03") {
+                include ("vistas/vwNosotros.php");
             } ?>
         </div>
     </main>
