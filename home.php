@@ -23,7 +23,7 @@
     <?php $pwActual = "home";
     include ("controllers/funciones.php");
     include ("vistas/vwBuscar.php");
-    include ("vistas/vwHeader.php"); ?>
+    include ("vistas/vwHeader.php");?>
     <main>
         <div class="container">
             <?php $numVistas = array("01", "02", "03", "04", "05", "06", "07", "08", "09");
@@ -39,7 +39,7 @@
                 include ("vistas/vwDetNotf.php");
             } else if($vw == "04") {
                 include ("vistas/vwEstCnt.php");
-            }  else if($vw == "05") {
+            } else if($vw == "05") {
                 include ("vistas/vwRegInq.php");
             }?>
         </div>

@@ -116,6 +116,7 @@ header hr {
 .bx-search {
     position: fixed;
     display: none;
+    z-index: 50;
     justify-content: center;
     width: 100.8%;
     height: 100%;
@@ -303,6 +304,48 @@ textarea {
     margin-top: 4%;
     border-radius: 10px;
     border: none;
+}
+
+.bx-login{
+    display: flex;
+    justify-content: center;
+}
+
+.bx-login .bx-login_mrc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    outline: 1px solid gray;
+    border-radius: 5px;
+}
+
+.bx-login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bx-login form input{
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+    outline: 1px solid gray;
+    border-radius: 5px;
+}
+
+.bx-login_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bx-login form input[type="submit"]{
+    width: 40%;
+    background: #226891;
+    color: #FFF;
+    outline: none;
 }
 
 .bx-notf {
