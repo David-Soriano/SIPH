@@ -113,7 +113,7 @@ header hr {
     margin: 10px auto;
 }
 
-.bx-search{
+.bx-search {
     position: fixed;
     display: none;
     justify-content: center;
@@ -122,14 +122,14 @@ header hr {
     background: rgba(0, 0, 0, 0.7);
 }
 
-.bx-search div{
+.bx-search div {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1%;
 }
 
-.bx-search div input{
+.bx-search div input {
     border-radius: 5px;
     border: none;
     width: 100%;
@@ -137,16 +137,17 @@ header hr {
     padding: 0 5%;
 }
 
-.bx-search div input:focus{
+.bx-search div input:focus {
     outline: none;
 }
 
-.bx-search div i{
+.bx-search div i {
     font-size: 20px;
     margin-top: 5%;
     color: #FFF;
     cursor: pointer;
 }
+
 .bx-wel .bx-wel_img {
     display: flex;
     justify-content: center;
@@ -385,16 +386,17 @@ textarea {
     border-radius: 5px;
 }
 
-.bx-EsCn_cajas .col-5 .row .col{
+.bx-EsCn_cajas .col-5 .row .col {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.bx-EsCn_cajas .col-5 .row .col p{
+.bx-EsCn_cajas .col-5 .row .col p {
     margin: 0;
     color: gray;
 }
+
 .bx-EsCn_Opc .col {
     margin: 0 7%;
 }
