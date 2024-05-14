@@ -29,7 +29,7 @@
                         include("vistas/vwOpcNotf.php");
                         include("vistas/vwNotf.php");
                     }?>
-                    <a href="#"><i class="bi bi-search-heart" title="Buscar"></i></a>
+                    <a href="#" id="btnSrh"><i class="bi bi-search-heart" title="Buscar"></i></a>
                     <?php if($pwActual == "home"){
                         include("vistas/vwOpcExit.php");
                     }?>

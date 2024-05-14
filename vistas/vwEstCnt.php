@@ -4,13 +4,17 @@
         <div class="col-5">
             <h5>Deudas Pendientes</h5>
             <div class="row">
-                <div class="col"></div>
+                <div class="col">
+                    <p>Sin deudas</p>
+                </div>
             </div>
         </div>
         <div class="col-5">
             <h5>Pagos Realizados</h5>
             <div class="row">
-                <div class="col"></div>
+                <div class="col">
+                    <p>Sin pagos</p>
+                </div>
             </div>
         </div>
     </div>

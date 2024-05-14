@@ -14,6 +14,7 @@
 <body>
     <?php $pwActual = "index";
     include ("controllers/funciones.php");
+    include ("vistas/vwBuscar.php");
     include ("vistas/vwHeader.php"); ?>
     <main>
     <div class="container c-2">
@@ -33,5 +34,5 @@
     </main>
     <?php include ("vistas/wFooter.php") ?>
 </body>
-
+<script src="js/script.js"></script>
 </html>

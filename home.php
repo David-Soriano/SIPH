@@ -22,6 +22,7 @@
 <body>
     <?php $pwActual = "home";
     include ("controllers/funciones.php");
+    include ("vistas/vwBuscar.php");
     include ("vistas/vwHeader.php"); ?>
     <main>
         <div class="container">

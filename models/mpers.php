@@ -88,6 +88,7 @@
 
         public function getAll(){
             $res = NULL;
+            $sql = "";
         }
     }
 ?>
