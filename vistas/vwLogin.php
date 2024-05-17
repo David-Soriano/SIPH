@@ -6,6 +6,10 @@
             <input type="text" name="usu" id="" required>
             <label for="">Contraseña</label>
             <input type="password" name="pass" id="" required>
+            <?php
+				$err = isset($_GET['err']) ? $_GET['err']:NULL;
+				if($err=='oK') echo "<span class='dtinv'>Datos inválidos o usuario desactivado.</span>";
+			?>
             <div class="col bx-login_btns">
                 <input type="submit" value="Entrar">
                 <a href="#">¿Olvido su contraseña?</a>
