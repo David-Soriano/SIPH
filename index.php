@@ -13,25 +13,19 @@
 
 <body>
     <?php $pwActual = "index";
+    include("models/conexion.php");
+    include("controllers/cmenu.php");
     include ("controllers/funciones.php");
     include ("vistas/vwBuscar.php");
     include ("vistas/vwHeader.php"); ?>
     <main>
     <div class="container c-2">
-            <?php $numVistas = array("01", "02", "03", "04", "05");
+            <?php
             $vw = isset($_REQUEST['vw']) ? $_REQUEST['vw'] : NULL;
-            if (!in_array($vw, $numVistas)) {
-                include ("vistas/vwWelcome.php");
-            }
-            if ($vw == "01") {
-                include ("vistas/vwSoport.php");
-            } else if ($vw == "02") {
-                include ("vistas/vwReservas.php");
-            } else if ($vw == "03") {
-                include ("vistas/vwNosotros.php");
-            } else if ($vw == "04") {
-                include ("vistas/vwLogin.php");
-            }?>
+            $rut = valRut($vw);
+            if($rut) include($rut[0]['rutpag']);
+            else echo "No Tiene Permisos";
+            ?>            
         </div>
     </main>
     <?php include ("vistas/wFooter.php") ?>

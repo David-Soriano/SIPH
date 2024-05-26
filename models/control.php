@@ -23,7 +23,7 @@ function validar($user, $pass){
         $_SESSION['nompef'] = $res[0]['nompef'];
         $_SESSION['pagini'] = $res[0]['pagini'];
         $_SESSION['aut'] = "MNBb:234#33.sdf!-ff";
-        echo "<script type='text/javascript'>window.location='../home.php;'</script>";
+        echo "<script type='text/javascript'>window.location='../home.php';</script>";
     } else{
         msj();
     }
@@ -31,7 +31,7 @@ function validar($user, $pass){
 
 function ingreso($user, $pass){
     $res = NULL;
-    $sql = "SELECT p.idper, p.nomper, p.apeper, p.idpef, f.nompef, f.pagini FROM persona AS p INNER JOIN perfil AS f ON p.idpef = f.idpef WHERE p.actper = 1 AND p.nodocper = :nodocper AND p.pasper = :pasper";
+    $sql = "SELECT p.idper, p.nomper, p.apeper, p.idpef, f.nompef, f.pagini FROM persona AS p INNER JOIN perfil AS f ON p.idpef = f.idpef WHERE p.actper = 2 AND p.nodocper = :nodocper AND p.pasper = :pasper";
     $modelo = new Conexion();
     $conexion = $modelo->getConexion();
     $result = $conexion->prepare($sql);
@@ -43,5 +43,5 @@ function ingreso($user, $pass){
 }
 
 function msj(){
-    echo "<script>window.location='../index.php?vw=04&err=oK';</script>";
+    echo "<script>window.location='../index.php?vw=27&err=oK';</script>";
 }

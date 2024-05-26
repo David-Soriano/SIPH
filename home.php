@@ -1,3 +1,4 @@
+<?Php require_once("models/seg.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,27 +22,22 @@
 
 <body>
     <?php $pwActual = "home";
+
+    include("models/conexion.php");
     include ("controllers/funciones.php");
+    include("controllers/cmenu.php");
     include ("vistas/vwBuscar.php");
     include ("vistas/vwHeader.php");?>
     <main>
         <div class="container">
-            <?php $numVistas = array("01", "02", "03", "04", "05", "06", "07", "08", "09");
+            <?php
             $vw = isset($_REQUEST['vw']) ? $_REQUEST['vw'] : NULL;
-            if(!in_array($vw, $numVistas)){
-                include("vistas/vwInit.php");
-            }
-            if ($vw == "01") {
-                include ("vistas/vwSoport.php");
-            } else if($vw == "02") {
-                include ("vistas/vwReservas.php");
-            } else if($vw == "03") {
-                include ("vistas/vwDetNotf.php");
-            } else if($vw == "04") {
-                include ("vistas/vwEstCnt.php");
-            } else if($vw == "05") {
-                include ("vistas/vwRegInq.php");
-            }?>
+            if(!$vw && $_SESSION['pagini']) $vw = $_SESSION['pagini']; 
+
+            $rut = valida($vw);
+            if($rut) include($rut[0]['rutpag']);
+            else echo "No Tiene Permisos";
+            ?>
         </div>
     </main>
     <?php include ("vistas/wFooter.php") ?>

@@ -1,1 +1,1 @@
-<li><a href="home.php?vw=04">Estado Cuenta</a></li>
+<li><a href="home.php?vw=24">Estado Cuenta</a></li>

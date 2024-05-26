@@ -1,1 +1,1 @@
-<a href="index.php"><i class="bi bi-box-arrow-left" id="btn-exit" title="Salir"></i></a>
+<a href="vistas/vwSal.php"><i class="bi bi-box-arrow-left" id="btn-exit" title="Salir"></i></a>
