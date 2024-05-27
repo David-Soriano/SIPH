@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             $vw = isset($_REQUEST['vw']) ? $_REQUEST['vw'] : NULL;
             $rut = valRut($vw);
             if($rut) include($rut[0]['rutpag']);
-            else echo "No Tiene Permisos";
+            else include("vistas/vwWelcome.php");
             ?>            
         </div>
     </main>

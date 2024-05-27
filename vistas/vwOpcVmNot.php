@@ -1,1 +1,1 @@
-<a href="home.php?vw=03">Ver más...</a>
+<a href="home.php?vw=23">Ver más...</a>

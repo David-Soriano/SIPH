@@ -1,6 +1,6 @@
 <?Php require_once("models/seg.php");?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
 
             $rut = valida($vw);
             if($rut) include($rut[0]['rutpag']);
-            else echo "No Tiene Permisos";
+            else include("vistas/vwInit.php");
             ?>
         </div>
     </main>

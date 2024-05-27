@@ -22,7 +22,7 @@
         <div class="col">
             <ul>
                 <li><a href="#">Realizar Pago</a></li>
-                <li><a href="home.php?vw=05">Registrar Inquilino</a></li>
+                <li><a href="home.php?vw=25">Registrar Inquilino</a></li>
                 <li><a href="#">Ver Inquilinos</a></li>
             </ul>
         </div>

@@ -3,9 +3,9 @@
         <h4>Iniciar Sesión</h4>
         <form action="models/control.php" method="POST">
             <label for="">Usuario</label>
-            <input type="text" name="usu" id="" required>
+            <input type="text" name="usu" id="" placeholder="Número de Documento" required>
             <label for="">Contraseña</label>
-            <input type="password" name="pass" id="" required>
+            <input type="password" name="pass" id="" placeholder="Tú Contraseña" required>
             <?php
 				$err = isset($_GET['err']) ? $_GET['err']:NULL;
 				if($err=='oK') echo "<span class='dtinv'>Datos inválidos o usuario desactivado.</span>";
